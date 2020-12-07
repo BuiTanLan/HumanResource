@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HumanResource.Infrastructure.Data
 {
-    class GenericRepository
+    public class GenericRepository
     {
     }
 }
