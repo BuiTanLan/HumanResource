@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace HumanResource.ApplicationCore.Entities
 {
-    public class RequestApproval
+    public class RequestApproval: BaseEntity
     {
-        public int Id { get; set; }
         public DateTime CreateDate { get; set; }
         public string Type { get; set; }
         // default : 0

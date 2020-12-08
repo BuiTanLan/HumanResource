@@ -4,9 +4,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HumanResource.ApplicationCore.Entities
 {
-    public class Employee
+    public class Employee: BaseEntity
     {
-        public int EmployeeId { get; set; }
         public string FullName { get; set; }
         public string Email { get; set; }
         public DateTime StartDate { get; set; }
@@ -21,7 +20,7 @@ namespace HumanResource.ApplicationCore.Entities
         public string PasswordSalt { get; set; }
         public string AvatarUrl { get; set; }
         public string ProfileUrl { get; set; }
-        public bool Status { get; set; }
+        public bool IsActive { get; set; }
         public int? RoleId { set; get; }
         public int? DepartmentId { get; set; } = null;
         public int? ShiftWorkId { set; get; } = null;

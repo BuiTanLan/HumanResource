@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace HumanResource.ApplicationCore.Entities
 {
-    public class Form
+    public class Form: BaseEntity
     {
         public int FormId { get; set; }
         public string FormName { get; set; }

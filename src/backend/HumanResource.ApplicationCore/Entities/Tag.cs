@@ -5,11 +5,10 @@ using System.Threading.Tasks;
 
 namespace HumanResource.ApplicationCore.Entities
 {
-    public class Tag
+    public class Tag: BaseEntity
     {
-        public int TagId { set; get; }
         public string TagName { set; get; }
-        public bool Status { set; get; }
+        public bool IsActive { set; get; }
         public virtual ICollection<BlogTag> BlogTags { set; get; }
     }
 }

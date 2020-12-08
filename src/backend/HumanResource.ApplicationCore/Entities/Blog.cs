@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace HumanResource.ApplicationCore.Entities
 {
-    public class Blog
+    public class Blog : BaseEntity
     {
-        public int BlogId { set; get; }
         public string Title { set; get; }
         public string Content { set; get; }
         public DateTime? CreateDate { set; get; }

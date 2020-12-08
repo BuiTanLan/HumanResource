@@ -5,11 +5,10 @@ using System.Threading.Tasks;
 
 namespace HumanResource.ApplicationCore.Entities
 {
-    public class Role
+    public class Role: BaseEntity
     {
-        public int RoleId { set; get; }
         public string RoleName { set; get; }
-        public bool Status { set; get; }
+        public bool IsActive { set; get; }
 
         public virtual ICollection<Employee> Employees { set; get; }
         public virtual ICollection<BlogRole> BlogRoles { set; get; }

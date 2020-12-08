@@ -6,14 +6,13 @@ using System.ComponentModel.DataAnnotations;
 
 namespace HumanResource.ApplicationCore.Entities
 {
-    public class DayWork
+    public class DayWork: BaseEntity
     {
-        public int DayWorkId { set; get; }
         public DateTime DateOfWork { get; set; }
         public DateTime? StartTime { set; get; }
         public DateTime? EndTime { set; get; }
         public string DayInfo { get; set; }
-        public bool? Status { set; get; }
+        public bool? IsActive { set; get; }
         public int TimeSheetId { get; set; }
         public TimeSheet TimeSheet { get; set; }
     }

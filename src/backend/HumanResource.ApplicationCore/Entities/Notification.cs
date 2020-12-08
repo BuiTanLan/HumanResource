@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace HumanResource.ApplicationCore.Entities
 {
-    public class Notification
+    public class Notification: BaseEntity
     {
-        public int Id { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
         public string LinkRelated { get; set; }

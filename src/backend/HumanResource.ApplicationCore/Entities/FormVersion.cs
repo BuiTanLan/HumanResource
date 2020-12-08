@@ -5,13 +5,12 @@ using System.Threading.Tasks;
 
 namespace HumanResource.ApplicationCore.Entities
 {
-    public class FormVersion
+    public class FormVersion: BaseEntity
     {
-        public int FormVersionId { get; set; }
         public string VersionName { get; set; }
         public DateTime CreateDate { get; set; }
         public DateTime? EndDate { get; set; }
-        public bool Status { get; set; }
+        public bool IsActive { get; set; }
         public int FormId { get; set; }
     }
 }
